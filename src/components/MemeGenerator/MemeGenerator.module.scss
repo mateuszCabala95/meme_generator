@@ -1,0 +1,132 @@
+.memeContainer{
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.flexContainer{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+
+
+  @media only screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-around;
+  };
+  @media only screen and (min-width: 992px) {};
+  @media only screen and (min-width: 1200px) {}
+}
+.input{
+  text-align: center;
+  width: 80%;
+  box-sizing: border-box;
+  outline: none;
+  border: 1px solid lightcoral;
+  border-radius: 7px;
+  padding: 10px;
+  margin: 10px auto;
+  transition: 0.25s;
+  background-color: rgba(240, 128,128, 0.5);
+
+  @media only screen and (min-width: 600px) {
+    width: 60%;
+    padding: 15px;
+    margin: 20px auto;
+    font-size: 1.2em;
+  };
+  @media only screen and (min-width: 768px) {
+    width: 45%;
+    padding: 25px;
+    margin: 30px auto;
+    font-size: 1.4em;
+    border-radius: 10px;
+
+  };
+  @media only screen and (min-width: 992px) {
+    width: 30%;
+    padding: 25px;
+    margin: 30px auto;
+    font-size: 1.4em;
+  };
+  @media only screen and (min-width: 1200px) {
+    width: 25%;
+    padding: 30px;
+    margin: 30px auto;
+    font-size: 1.4em;
+  }
+}
+
+.input:focus{
+  background-color: rgba(240, 128,128, 0.8);
+
+
+}
+
+.button {
+  width: 80%;
+  display: inline-block;
+  padding: 15px;
+  border: 1px solid #ff7f50;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1.5em;
+  margin: 10px auto;
+  transition: 0.25s;
+  background-color: rgba(255, 127, 80, 0.5);
+
+  @media only screen and (min-width: 600px) {
+    width: 60%;
+    margin: 20px auto;
+  };
+  @media only screen and (min-width: 768px) {
+    width: 45%;
+    margin: 30px auto;
+
+  };
+  @media only screen and (min-width: 992px) {
+    width: 30%;
+    margin: 30px auto;
+  };
+  @media only screen and (min-width: 1200px) {
+
+    width: 25%;
+    margin: 35px auto;
+    padding: 25px;
+
+  };
+}
+
+
+
+.button:hover, .button:focus{
+  border-radius: 25px;
+  background-color: rgba(255, 127, 80, 0.8);
+}
+
+
+.image{
+  position: relative;
+}
+
+.topText{
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+}
+.imageMem{
+display: block;
+  margin: 0 auto;
+  max-width: 100vw;
+  height: auto;
+}
+.bottomText{
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+}
